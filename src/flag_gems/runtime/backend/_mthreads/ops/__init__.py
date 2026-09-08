@@ -95,6 +95,7 @@ from .special_gammainc import special_gammainc
 from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
+from .upsample_bilinear2d import upsample_bilinear2d
 from .upsample_linear1d_backward import upsample_linear1d_backward
 from .w8a8_block_fp8_matmul import w8a8_block_fp8_matmul
 from .zeros import zero_, zeros
@@ -207,6 +208,7 @@ __all__ = [
     "_unique2",
     "trunc",
     "trunc_",
+    "upsample_bilinear2d",
     "upsample_linear1d_backward",
     "w8a8_block_fp8_matmul",
     "zero_",
