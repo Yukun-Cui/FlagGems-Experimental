@@ -19,6 +19,7 @@ from .all import all, all_dim, all_dims
 from .amax import amax
 from .any import any, any_dim, any_dims
 from .arange import arange, arange_start
+from .arctan2 import arctan2
 from .argmin import argmin
 from .batch_norm import batch_norm, batch_norm_backward
 from .bucketize import bucketize
@@ -111,6 +112,7 @@ __all__ = [
     "any_dims",
     "arange",
     "arange_start",
+    "arctan2",
     "argmin",
     "batch_norm",
     "batch_norm_backward",
