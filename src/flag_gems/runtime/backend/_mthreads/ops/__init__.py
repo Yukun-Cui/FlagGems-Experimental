@@ -87,6 +87,7 @@ from .repeat_interleave import (
     repeat_interleave_self_tensor,
     repeat_interleave_tensor,
 )
+from .replication_pad2d import replication_pad2d
 from .resolve_conj import resolve_conj
 from .round_ import round_
 from .softplus_backward import softplus_backward
@@ -190,6 +191,7 @@ __all__ = [
     "repeat_interleave_self_int",
     "repeat_interleave_self_tensor",
     "repeat_interleave_tensor",
+    "replication_pad2d",
     "resolve_conj",
     "round_",
     "softplus_backward",
