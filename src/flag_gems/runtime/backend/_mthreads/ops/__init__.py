@@ -91,6 +91,7 @@ from .resolve_conj import resolve_conj
 from .round_ import round_
 from .softplus_backward import softplus_backward
 from .sort import sort, sort_stable
+from .special_erfcx import special_erfcx
 from .special_gammainc import special_gammainc
 from .tile import tile
 from .trunc import trunc, trunc_
@@ -195,6 +196,7 @@ __all__ = [
     "softplus_backward",
     "sort",
     "sort_stable",
+    "special_erfcx",
     "special_gammainc",
     "tile",
     "true_divide",
