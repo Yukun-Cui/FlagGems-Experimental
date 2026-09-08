@@ -49,6 +49,7 @@ from .index_copy_ import index_copy, index_copy_
 from .index_put import _index_put_impl_, index_put, index_put_
 from .index_select import index_select
 from .linalg_cholesky import linalg_cholesky
+from .linalg_ldl_solve import linalg_ldl_solve
 from .linear import linear
 from .log import log
 from .log10 import log10, log10_, log10_out
@@ -143,6 +144,7 @@ __all__ = [
     "_index_put_impl_",
     "index_select",
     "linalg_cholesky",
+    "linalg_ldl_solve",
     "linear",
     "log",
     "log10",
