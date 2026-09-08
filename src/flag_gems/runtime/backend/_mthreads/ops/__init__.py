@@ -92,6 +92,7 @@ from .round_ import round_
 from .softplus_backward import softplus_backward
 from .sort import sort, sort_stable
 from .special_gammainc import special_gammainc
+from .special_round_out import special_round_out
 from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
@@ -196,6 +197,7 @@ __all__ = [
     "sort",
     "sort_stable",
     "special_gammainc",
+    "special_round_out",
     "tile",
     "true_divide",
     "true_divide_",
