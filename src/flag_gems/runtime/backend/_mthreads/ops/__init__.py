@@ -15,6 +15,7 @@
 from torch_musa import current_device, get_device_capability
 
 from ._conj import _conj
+from ._upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .all import all, all_dim, all_dims
 from .amax import amax
 from .any import any, any_dim, any_dims
@@ -96,7 +97,6 @@ from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
 from .upsample_linear1d_backward import upsample_linear1d_backward
-from .upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .w8a8_block_fp8_matmul import w8a8_block_fp8_matmul
 from .zeros import zero_, zeros
 from .zeros_like import zeros_like
