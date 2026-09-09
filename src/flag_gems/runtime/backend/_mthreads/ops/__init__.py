@@ -19,7 +19,9 @@ from .all import all, all_dim, all_dims
 from .amax import amax
 from .any import any, any_dim, any_dims
 from .arange import arange, arange_start
+from .arctan2 import arctan2
 from .argmin import argmin
+from .atan2 import atan2
 from .atan2_ import atan2_
 from .batch_norm import batch_norm, batch_norm_backward
 from .bucketize import bucketize
@@ -92,10 +94,12 @@ from .resolve_conj import resolve_conj
 from .round_ import round_
 from .softplus_backward import softplus_backward
 from .sort import sort, sort_stable
+from .special_erfcx import special_erfcx
 from .special_gammainc import special_gammainc
 from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
+from .upsample_bilinear2d import upsample_bilinear2d
 from .upsample_linear1d_backward import upsample_linear1d_backward
 from .w8a8_block_fp8_matmul import w8a8_block_fp8_matmul
 from .zeros import zero_, zeros
@@ -112,7 +116,9 @@ __all__ = [
     "any_dims",
     "arange",
     "arange_start",
+    "arctan2",
     "argmin",
+    "atan2",
     "atan2_",
     "batch_norm",
     "batch_norm_backward",
@@ -197,6 +203,7 @@ __all__ = [
     "softplus_backward",
     "sort",
     "sort_stable",
+    "special_erfcx",
     "special_gammainc",
     "tile",
     "true_divide",
@@ -209,6 +216,7 @@ __all__ = [
     "_unique2",
     "trunc",
     "trunc_",
+    "upsample_bilinear2d",
     "upsample_linear1d_backward",
     "w8a8_block_fp8_matmul",
     "zero_",
