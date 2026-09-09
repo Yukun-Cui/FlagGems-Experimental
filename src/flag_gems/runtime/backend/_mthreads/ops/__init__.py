@@ -92,6 +92,7 @@ from .round_ import round_
 from .softplus_backward import softplus_backward
 from .sort import sort, sort_stable
 from .special_gammainc import special_gammainc
+from .thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_impl
 from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
@@ -102,6 +103,7 @@ from .zeros_like import zeros_like
 
 __all__ = [
     "_conj",
+    "_thnn_fused_lstm_cell_backward_impl",
     "amax",
     "all",
     "all_dim",
