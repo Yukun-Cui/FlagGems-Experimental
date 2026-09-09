@@ -106,7 +106,7 @@ from .special_erfcx import special_erfcx
 from .special_gammainc import special_gammainc
 from .special_round import special_round
 from .special_round_out import special_round_out
-from .thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_impl
+from ._thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_impl
 from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
