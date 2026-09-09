@@ -47,6 +47,7 @@ from .log_normal_ import log_normal_
 from .matmul_bf16 import matmul_bf16
 from .matmul_int8 import matmul_int8
 from .mm import mm, mm_out
+from .mvlgamma import run as mvlgamma
 from .narrow_copy import narrow_copy
 from .nonzero_numpy import nonzero_numpy
 from .permute_copy import permute_copy
@@ -67,10 +68,13 @@ from .special_modified_bessel_k1 import (
     special_modified_bessel_k1,
     special_modified_bessel_k1_out,
 )
+from .special_round import special_round
+from .special_round_out import special_round_out
 from .special_shifted_chebyshev_polynomial_w import (
     special_shifted_chebyshev_polynomial_w,
 )
 from .tile import tile
+from .unsafe_masked_index_put_accumulate import _unsafe_masked_index_put_accumulate
 from .var import var, var_correction, var_dim
 
 _pointwise_dynamic = importlib.import_module("flag_gems.utils.pointwise_dynamic")
@@ -79,6 +83,7 @@ _pointwise_dynamic.ModuleGenerator = ModuleGenerator
 __all__ = [
     "_conv_depthwise2d",
     "_native_batch_norm_legit_functional",
+    "_unsafe_masked_index_put_accumulate",
     "addmm",
     "addmm_",
     "addmm_out",
@@ -111,6 +116,7 @@ __all__ = [
     "matmul_int8",
     "mm",
     "mm_out",
+    "mvlgamma",
     "narrow_copy",
     "nonzero_numpy",
     "permute_copy",
@@ -129,6 +135,8 @@ __all__ = [
     "special_hermite_polynomial_h",
     "special_modified_bessel_k1",
     "special_modified_bessel_k1_out",
+    "special_round",
+    "special_round_out",
     "special_shifted_chebyshev_polynomial_w",
     "tile",
     "var",
