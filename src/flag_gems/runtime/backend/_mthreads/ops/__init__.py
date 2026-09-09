@@ -15,6 +15,7 @@
 from torch_musa import current_device, get_device_capability
 
 from ._conj import _conj
+from ._thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_impl
 from ._upsample_bilinear2d_aa import _upsample_bilinear2d_aa
 from ._upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .adaptive_avg_pool2d_backward import _adaptive_avg_pool2d_backward
@@ -59,6 +60,7 @@ from .index_put import _index_put_impl_, index_put, index_put_
 from .index_select import index_select
 from .kthvalue import kthvalue
 from .lcm_ import lcm_
+from .lift_out import lift_out
 from .linalg_cholesky import linalg_cholesky
 from .linalg_ldl_factor_ex import ldl_factor_ex
 from .linear import linear
@@ -122,6 +124,7 @@ from .zeros_like import zeros_like
 __all__ = [
     "_adaptive_avg_pool2d_backward",
     "_conj",
+    "_thnn_fused_lstm_cell_backward_impl",
     "_upsample_bilinear2d_aa",
     "_upsample_nearest_exact2d_backward",
     "amax",
@@ -173,6 +176,7 @@ __all__ = [
     "kthvalue",
     "lcm_",
     "ldl_factor_ex",
+    "lift_out",
     "linalg_cholesky",
     "linear",
     "log",
