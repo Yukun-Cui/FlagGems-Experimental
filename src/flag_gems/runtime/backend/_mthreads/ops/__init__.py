@@ -15,6 +15,7 @@
 from torch_musa import current_device, get_device_capability
 
 from ._conj import _conj
+from ._thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_impl
 from .adaptive_avg_pool2d_backward import _adaptive_avg_pool2d_backward
 from .all import all, all_dim, all_dims
 from .amax import amax
@@ -106,7 +107,6 @@ from .special_erfcx import special_erfcx
 from .special_gammainc import special_gammainc
 from .special_round import special_round
 from .special_round_out import special_round_out
-from ._thnn_fused_lstm_cell_backward_impl import _thnn_fused_lstm_cell_backward_impl
 from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
