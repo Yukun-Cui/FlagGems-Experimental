@@ -96,12 +96,14 @@ from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
 from .upsample_linear1d_backward import upsample_linear1d_backward
+from .upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .w8a8_block_fp8_matmul import w8a8_block_fp8_matmul
 from .zeros import zero_, zeros
 from .zeros_like import zeros_like
 
 __all__ = [
     "_conj",
+    "_upsample_nearest_exact2d_backward",
     "amax",
     "all",
     "all_dim",
