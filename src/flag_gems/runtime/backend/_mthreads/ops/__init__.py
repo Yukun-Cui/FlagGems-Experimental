@@ -15,6 +15,8 @@
 from torch_musa import current_device, get_device_capability
 
 from ._conj import _conj
+from ._upsample_bilinear2d_aa import _upsample_bilinear2d_aa
+from ._upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .adaptive_avg_pool2d_backward import _adaptive_avg_pool2d_backward
 from .all import all, all_dim, all_dims
 from .amax import amax
@@ -58,6 +60,7 @@ from .index_select import index_select
 from .kthvalue import kthvalue
 from .lift_out import lift_out
 from .linalg_cholesky import linalg_cholesky
+from .linalg_ldl_factor_ex import ldl_factor_ex
 from .linear import linear
 from .log import log
 from .log10 import log10, log10_, log10_out
@@ -102,6 +105,7 @@ from .resolve_conj import resolve_conj
 from .round_ import round_
 from .softplus_backward import softplus_backward
 from .sort import sort, sort_stable
+from .special_bessel_j1 import special_bessel_j1
 from .special_erfcx import special_erfcx
 from .special_gammainc import special_gammainc
 from .special_round import special_round
@@ -118,6 +122,8 @@ from .zeros_like import zeros_like
 __all__ = [
     "_adaptive_avg_pool2d_backward",
     "_conj",
+    "_upsample_bilinear2d_aa",
+    "_upsample_nearest_exact2d_backward",
     "amax",
     "all",
     "all_dim",
@@ -165,6 +171,7 @@ __all__ = [
     "_index_put_impl_",
     "index_select",
     "kthvalue",
+    "ldl_factor_ex",
     "lift_out",
     "linalg_cholesky",
     "linear",
@@ -221,6 +228,7 @@ __all__ = [
     "softplus_backward",
     "sort",
     "sort_stable",
+    "special_bessel_j1",
     "special_erfcx",
     "special_gammainc",
     "special_round",
