@@ -95,6 +95,7 @@ from .special_gammainc import special_gammainc
 from .tile import tile
 from .trunc import trunc, trunc_
 from .unique import _unique2
+from .upsample_bilinear2d_aa import _upsample_bilinear2d_aa
 from .upsample_linear1d_backward import upsample_linear1d_backward
 from .w8a8_block_fp8_matmul import w8a8_block_fp8_matmul
 from .zeros import zero_, zeros
@@ -102,6 +103,7 @@ from .zeros_like import zeros_like
 
 __all__ = [
     "_conj",
+    "_upsample_bilinear2d_aa",
     "amax",
     "all",
     "all_dim",
