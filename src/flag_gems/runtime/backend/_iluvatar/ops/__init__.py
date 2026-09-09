@@ -16,6 +16,7 @@ import importlib
 
 from ..utils.pointwise_dynamic import ModuleGenerator
 from ._native_batch_norm_legit_functional import _native_batch_norm_legit_functional
+from .acos_ import acos_
 from .adaptive_avg_pool2d_backward import _adaptive_avg_pool2d_backward
 from .adaptive_max_pool2d_backward import adaptive_max_pool2d_backward
 from .adaptive_max_pool3d_backward import run
@@ -24,6 +25,7 @@ from .addmm_ import addmm_
 from .arccosh_ import arccosh_
 from .as_strided_scatter import as_strided_scatter
 from .avg_pool3d import avg_pool3d_backward
+from .batch_norm_no_update import run as _batch_norm_no_update
 from .broadcast_tensors import broadcast_tensors
 from .broadcast_to import broadcast_to
 from .cholesky_solve import cholesky_solve, cholesky_solve_out
@@ -40,6 +42,7 @@ from .histc import histc
 from .igamma_ import igamma_
 from .index_select_backward import index_select_backward
 from .kthvalue import kthvalue
+from .lift_out import lift_out
 from .linalg_cholesky import linalg_cholesky
 from .linalg_ldl_factor_ex import ldl_factor_ex
 from .linalg_matrix_norm import linalg_matrix_norm
@@ -50,6 +53,7 @@ from .linalg_solve_triangular import (
 )
 from .linalg_svdvals import linalg_svdvals
 from .linear import linear
+from .log10_ import log10_
 from .log_normal import log_normal
 from .log_normal_ import log_normal_
 from .matmul_bf16 import matmul_bf16
@@ -80,6 +84,7 @@ from .special_hermite_polynomial_h import (
     special_hermite_polynomial_h_tensor_tensor,
 )
 from .special_legendre_polynomial_p import special_legendre_polynomial_p
+from .special_modified_bessel_k0 import special_modified_bessel_k0
 from .special_modified_bessel_k0_out import special_modified_bessel_k0_out
 from .special_modified_bessel_k1 import (
     special_modified_bessel_k1,
@@ -101,11 +106,13 @@ _pointwise_dynamic.ModuleGenerator = ModuleGenerator
 
 __all__ = [
     "_adaptive_avg_pool2d_backward",
+    "_batch_norm_no_update",
     "_cholesky_solve_helper",
     "_conv_depthwise2d",
     "_native_batch_norm_legit_functional",
     "_thnn_fused_lstm_cell_backward_impl",
     "_unsafe_masked_index_put_accumulate",
+    "acos_",
     "adaptive_max_pool2d_backward",
     "addmm",
     "addmm_",
@@ -130,6 +137,7 @@ __all__ = [
     "index_select_backward",
     "kthvalue",
     "ldl_factor_ex",
+    "lift_out",
     "linalg_cholesky",
     "linalg_matrix_norm",
     "linalg_qr",
@@ -138,6 +146,7 @@ __all__ = [
     "linalg_solve_triangular_out",
     "linalg_svdvals",
     "linear",
+    "log10_",
     "log_normal",
     "log_normal_",
     "matmul_bf16",
@@ -167,6 +176,7 @@ __all__ = [
     "special_hermite_polynomial_h",
     "special_hermite_polynomial_h_tensor_tensor",
     "special_legendre_polynomial_p",
+    "special_modified_bessel_k0",
     "special_modified_bessel_k0_out",
     "special_modified_bessel_k1",
     "special_modified_bessel_k1_out",

@@ -16,6 +16,7 @@ from torch_musa import current_device, get_device_capability
 
 from ._conj import _conj
 from ._upsample_bilinear2d_aa import _upsample_bilinear2d_aa
+from ._upsample_nearest_exact2d_backward import _upsample_nearest_exact2d_backward
 from .adaptive_avg_pool2d_backward import _adaptive_avg_pool2d_backward
 from .all import all, all_dim, all_dims
 from .amax import amax
@@ -120,6 +121,7 @@ __all__ = [
     "_adaptive_avg_pool2d_backward",
     "_conj",
     "_upsample_bilinear2d_aa",
+    "_upsample_nearest_exact2d_backward",
     "amax",
     "all",
     "all_dim",
