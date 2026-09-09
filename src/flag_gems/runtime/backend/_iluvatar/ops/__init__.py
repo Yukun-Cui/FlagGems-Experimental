@@ -24,6 +24,7 @@ from .avg_pool3d import avg_pool3d_backward
 from .broadcast_tensors import broadcast_tensors
 from .broadcast_to import broadcast_to
 from .cholesky_solve import cholesky_solve, cholesky_solve_out
+from .constant_pad_nd import constant_pad_nd
 from .conv_depthwise2d import _conv_depthwise2d
 from .conv_transpose1d import conv_transpose1d
 from .diagonal_scatter import diagonal_scatter
@@ -33,6 +34,7 @@ from .hadamard_transform import hadamard_transform
 from .histc import histc
 from .index_select_backward import index_select_backward
 from .linalg_cholesky import linalg_cholesky
+from .linalg_ldl_factor_ex import ldl_factor_ex
 from .linalg_matrix_norm import linalg_matrix_norm
 from .linalg_qr import linalg_qr, linalg_qr_out
 from .linalg_solve_triangular import (
@@ -60,10 +62,7 @@ from .special_chebyshev_polynomial_w import (
     special_chebyshev_polynomial_w_out,
 )
 from .special_gammainc import special_gammainc
-from .special_hermite_polynomial_h import (
-    special_hermite_polynomial_h,
-    special_hermite_polynomial_h_tensor_tensor,
-)
+from .special_hermite_polynomial_h import special_hermite_polynomial_h
 from .special_modified_bessel_k1 import (
     special_modified_bessel_k1,
     special_modified_bessel_k1_out,
@@ -89,6 +88,7 @@ __all__ = [
     "broadcast_to",
     "cholesky_solve",
     "cholesky_solve_out",
+    "constant_pad_nd",
     "conv_transpose1d",
     "diagonal_scatter",
     "div_mode",
@@ -97,6 +97,7 @@ __all__ = [
     "hadamard_transform",
     "histc",
     "index_select_backward",
+    "ldl_factor_ex",
     "linalg_cholesky",
     "linalg_matrix_norm",
     "linalg_qr",
@@ -115,8 +116,8 @@ __all__ = [
     "permute_copy",
     "renorm_",
     "repeat",
-    "resolve_neg",
     "repeat_interleave_self_int",
+    "resolve_neg",
     "run",
     "scatter_add_",
     "softplus_backward",
@@ -126,7 +127,6 @@ __all__ = [
     "special_chebyshev_polynomial_w_out",
     "special_gammainc",
     "special_hermite_polynomial_h",
-    "special_hermite_polynomial_h_tensor_tensor",
     "special_modified_bessel_k1",
     "special_modified_bessel_k1_out",
     "special_shifted_chebyshev_polynomial_w",
