@@ -31,7 +31,7 @@ jobs:
   preprocess:
     runs-on: ubuntu-latest
     concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+      group: ${{ github.workflow }}
       cancel-in-progress: true
     outputs:
       changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
